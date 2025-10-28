@@ -39,9 +39,9 @@ export default function TicketForm({ onCreate }){
         <div>
           <label>Priority
             <select name="priority" value={form.priority} onChange={change} className="w-full mt-1 input">
-              <option value="basic">Basic</option>
-              <option value="standard">Standard</option>
-              <option value="critical">Critical</option>
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
             </select>
           </label>
           {errors.priority && <div className="text-red-600 text-sm">{errors.priority}</div>}
